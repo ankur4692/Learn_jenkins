@@ -9,8 +9,8 @@ pipeline {
 
 
      environment {
-        AWS_ACCESS_KEY_ID     = credentials('AWS_ACCESS_KEY_ID')
-        AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
+        AWS_ACCESS_KEY_ID     = "AKIASNPFKRHVRCPCUMJZ"
+        AWS_SECRET_ACCESS_KEY = "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"
     }
 
    agent  any
@@ -24,7 +24,7 @@ pipeline {
                  script{
                         dir("terraform")
                         {
-                            git "https://github.com/easyawslearn/Terraform-Tutorial.git"
+                            git "https://github.com/ankur4692/Learn_jenkins.git"
                         }
                     }
                 }
